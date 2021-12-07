@@ -56,7 +56,7 @@ class Upgrader {
   Duration durationUntilAlertAgain = Duration(days: 3);
 
   /// For debugging, always force the upgrade to be available.
-  bool debugDisplayAlways = false;
+  bool debugDisplayAlways = true;
 
   /// For debugging, display the upgrade at least once once.
   bool debugDisplayOnce = false;
