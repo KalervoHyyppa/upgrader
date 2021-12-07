@@ -62,7 +62,7 @@ class Upgrader {
   bool debugDisplayOnce = false;
 
   /// Enable print statements for debugging.
-  bool debugLogging = false;
+  bool debugLogging = true;
 
   /// The localized messages used for display in upgrader.
   UpgraderMessages? messages;
@@ -225,6 +225,7 @@ class Upgrader {
         print('upgrader: countryCode: $country');
       }
 
+      print('QQQQ platform ${platform}');
       // Get Android version from Google Play Store, or
       // get iOS version from iTunes Store.
       if (platform == TargetPlatform.android ||
