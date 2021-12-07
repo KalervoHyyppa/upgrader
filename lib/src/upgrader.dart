@@ -56,13 +56,13 @@ class Upgrader {
   Duration durationUntilAlertAgain = Duration(days: 3);
 
   /// For debugging, always force the upgrade to be available.
-  bool debugDisplayAlways = true;
+  bool debugDisplayAlways = false;
 
   /// For debugging, display the upgrade at least once once.
   bool debugDisplayOnce = false;
 
   /// Enable print statements for debugging.
-  bool debugLogging = true;
+  bool debugLogging = false;
 
   /// The localized messages used for display in upgrader.
   UpgraderMessages? messages;
@@ -225,7 +225,6 @@ class Upgrader {
         print('upgrader: countryCode: $country');
       }
 
-      print('QQQQ platform ${platform}');
       // Get Android version from Google Play Store, or
       // get iOS version from iTunes Store.
       if (platform == TargetPlatform.android ||
